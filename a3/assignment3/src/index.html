@@ -47,7 +47,7 @@
         <figcaption>- Bush Elephant Walking, <cite>animalia.bio/african-bush-elephant</cite></figcaption>
       </figure>
         
-      <section general Information>
+      <section class="general Information">
         
         <h2>General Information</h2>
 
@@ -73,11 +73,11 @@
 
       <h4>Size: Bush Elephants vs Other Elephants</h4>
       <figure>
-        <img src="./Images/Elephant-Size-Comparison.png" alt="Size: Bush Elephants vs Other Elephants"/>
+        <img src="./Images/Elephant-Size-Comparison.png" alt="Bush Elephants vs Other Elephants"/>
         <figcaption>- Size: Bush Elephants vs Other Elephants, <cite>dimensions.com/element/indian-elephant-elephas-maximus-indicus</figcaption>
       </figure>
 
-      <section Social Dynamics>
+      <section class="Social Dynamics">
         <h2>Social Dynamics</h2>
         <p>
           The African Bush elephant are known for their family units which are made up of around ten
@@ -99,7 +99,7 @@
         <figcaption>- Bush Elephants Bonding, <cite>youtube.com/@AfricanSafarisCoNz</figcaption>
       </figure>
 
-      <section Feeding Practices>
+      <section class="Feeding Practices">
         <h2>Feeding Practices</h2>
         <p>
           Bush elephant groups, whether they be family units or bachelor parties, forage during the
@@ -118,7 +118,7 @@
         <figcaption>- Bush Elephant Reaching For Food, <cite>en.wikipedia.org/wiki/File:African_elephant_(Loxodonta_africana)_reaching_up_3.jpg</cite></figcaption>
       </figure>
 
-      <section Communication>
+      <section class="Communication">
         <h2>Communication</h2>
         <p>
           Bush elephants use a mixture of gestures and vocal noises to communicate with their fellow
@@ -132,6 +132,15 @@
         </p>
       </section>
 
+      <figure>
+        <H4>Bush Elephant Rumble</H4>
+        <audio Controls>
+          <source src="./Audio/Loxodonta_africana_oral_rumble_visualized_with_acoustic_camera_(25fps)_-_pone.0048907.s003.ogv.720p.mp3" type="audio/mpeg" />
+        </audio>
+        <figcaption>- Bush Elephant Rumble, <cite>inaturalist.org/taxa/43694-Loxodonta-africana</cite></figcaption>
+      </figure>
+
+      
       
     </main>
 
@@ -141,6 +150,24 @@
   <footer>
 
   </footer>
-
+  <script>
+    
   
+    function playPause(aud) {
+      console.log("Playing Audio");
+      var aud = document.getElementById(aud);
+      if (aud.paused) {
+        if (typeof aud.play === 'function')
+          aud.play();
+      } else {
+        if (typeof aud.pause === 'function')
+          aud.pause();
+      }
+      
+      isPlaying = !isPlaying;
+    }
+  </script>
+
 </html>
+
+
