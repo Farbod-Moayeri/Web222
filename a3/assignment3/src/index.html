@@ -3,18 +3,19 @@
 
 <html lang="en">
 
+
   <head>
 
-    <nav>
-      <a href="index.html" style="margin-left: 50px;">Index</a>
-      <a href="./about.html" style="margin-left: 50px;">About</a>
-      <a href="./Academic_Integrity.html" style="margin-left: 50px;">Honesty</a>
-    </nav>
-
     <!-- Found something that really helps my webpage look good, stylesheet-->
-    
+   
 
     <style>
+
+      nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
       body {
         display: flex;
@@ -38,14 +39,24 @@
     <title>Bush Elephants</title>
   </head>
 
+
   <body>
+
+
     <main>
+      <section class="Top">
+        <nav>
+          <a href="index.html" style="margin-left: 50px;">Index</a>
+          <a href="./about.html" style="margin-left: 50px;">About</a>
+          <a href="./Academic_Integrity.html" style="margin-left: 50px;">Honesty</a>
+        </nav>
+        <h1>The Bush Elephant (Loxodonta africana)</h1>
+        <figure>
+          <img src="./Images/ElephantWalking.webp" alt="Elephant Walking"/>
+          <figcaption>- Bush Elephant Walking, <cite>animalia.bio/african-bush-elephant</cite></figcaption>
+        </figure>
+      </section>
       
-      <h1>The Bush Elephant (Loxodonta africana)</h1>
-      <figure>
-        <img src="./Images/ElephantWalking.webp" alt="Elephant Walking"/>
-        <figcaption>- Bush Elephant Walking, <cite>animalia.bio/african-bush-elephant</cite></figcaption>
-      </figure>
         
       <section class="general Information">
         
@@ -65,17 +76,20 @@
         
       </section>
 
-      <h4>Bush Elephant Populations</h4>
+      <section class="Bush Elephant Info Pictures">
+        <h4>Bush Elephant Populations</h4>
         <figure>
           <img src="./Images/BushElephantPopulations.webp" alt="Bush Elephant Populations" />
           <figcaption>- Bush Elephant Populations, <cite>animalia.bio/african-bush-elephant</figcaption>
         </figure>
 
-      <h4>Size: Bush Elephants vs Other Elephants</h4>
-      <figure>
-        <img src="./Images/Elephant-Size-Comparison.png" alt="Bush Elephants vs Other Elephants"/>
-        <figcaption>- Size: Bush Elephants vs Other Elephants, <cite>dimensions.com/element/indian-elephant-elephas-maximus-indicus</figcaption>
-      </figure>
+        <h4>Size: Bush Elephants vs Other Elephants</h4>
+        <figure>
+          <img src="./Images/Elephant-Size-Comparison.png" alt="Bush Elephants vs Other Elephants"/>
+          <figcaption>- Size: Bush Elephants vs Other Elephants, <cite>dimensions.com/element/indian-elephant-elephas-maximus-indicus</figcaption>
+        </figure>
+      </section>
+      
 
       <section class="Social Dynamics">
         <h2>Social Dynamics</h2>
@@ -94,11 +108,13 @@
         </p>
       </section>
 
-      <figure>
-        <video controls height="400px" src="./Video/yt5s.io-Elephants bonding.mp4" type="video/mp4" ></video>
-        <figcaption>- Bush Elephants Bonding, <cite>youtube.com/@AfricanSafarisCoNz</figcaption>
-      </figure>
-
+      <section class="Bush Elephant Video">
+        <figure>
+          <video controls height="400px" src="./Video/yt5s.io-Elephants bonding.mp4" type="video/mp4" ></video>
+          <figcaption>- Bush Elephants Bonding, <cite>youtube.com/@AfricanSafarisCoNz</figcaption>
+        </figure>
+      </section>
+      
       <section class="Feeding Practices">
         <h2>Feeding Practices</h2>
         <p>
@@ -113,10 +129,12 @@
         
       </section>
 
-      <figure>
-        <img src="./Images/African_elephant_(Loxodonta_africana)_reaching_up_3.jpg" alt="Elephant Reaching"/>
-        <figcaption>- Bush Elephant Reaching For Food, <cite>en.wikipedia.org/wiki/File:African_elephant_(Loxodonta_africana)_reaching_up_3.jpg</cite></figcaption>
-      </figure>
+      <section class="Bush Elephant Reaching Photo">
+        <figure>
+          <img src="./Images/African_elephant_(Loxodonta_africana)_reaching_up_3.jpg" alt="Elephant Reaching"/>
+          <figcaption>- Bush Elephant Reaching For Food, <cite>en.wikipedia.org/wiki/File:African_elephant_(Loxodonta_africana)_reaching_up_3.jpg</cite></figcaption>
+        </figure>
+      </section>
 
       <section class="Communication">
         <h2>Communication</h2>
@@ -132,15 +150,15 @@
         </p>
       </section>
 
-      <figure>
-        <H4>Bush Elephant Rumble</H4>
-        <audio Controls>
-          <source src="./Audio/Loxodonta_africana_oral_rumble_visualized_with_acoustic_camera_(25fps)_-_pone.0048907.s003.ogv.720p.mp3" type="audio/mpeg" />
-        </audio>
-        <figcaption>- Bush Elephant Rumble, <cite>inaturalist.org/taxa/43694-Loxodonta-africana</cite></figcaption>
-      </figure>
-
-      
+      <section class="Bush Elephant Audio">
+        <figure>
+          <H4>Bush Elephant Rumble</H4>
+          <audio Controls>
+            <source src="./Audio/Loxodonta_africana_oral_rumble_visualized_with_acoustic_camera_(25fps)_-_pone.0048907.s003.ogv.720p.mp3" type="audio/mpeg" />
+          </audio>
+          <figcaption>- Bush Elephant Rumble, <cite>inaturalist.org/taxa/43694-Loxodonta-africana</cite></figcaption>
+        </figure>  
+      </section>
       
     </main>
 
