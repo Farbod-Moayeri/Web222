@@ -5,50 +5,18 @@
 
 
   <head>
-
-    <!-- Found something that really helps my webpage look good, stylesheet-->
-   
-
-    <style>
-
-      nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        width: 60%;
-      }
-
-      p {
-        font-size:large;
-      }
-
-      img {
-        width:100%;
-        height: 100%;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
     <title>Bush Elephants</title>
   </head>
 
 
   <body>
-
-
     <main>
       <section class="Top">
         <nav>
-          <a href="index.html" style="margin-left: 50px;">Index</a>
+          <a href="index.html" style="margin-left: 0px;">Index</a>
           <a href="./about.html" style="margin-left: 50px;">About</a>
-          <a href="./Academic_Integrity.html" style="margin-left: 50px;">Honesty</a>
+          <a href="./honesty.html" style="margin-left: 50px;">Honesty</a>
         </nav>
         <h1>The Bush Elephant (Loxodonta africana)</h1>
         <figure>
@@ -159,32 +127,13 @@
           <figcaption>- Bush Elephant Rumble, <cite>inaturalist.org/taxa/43694-Loxodonta-africana</cite></figcaption>
         </figure>  
       </section>
-      
+      <div class="footer">
+        <h3>Made By: Farbod Moayeri</h3>
+      </div>
     </main>
 
     
   </body>
-
-  <footer>
-
-  </footer>
-  <script>
-    
-  
-    function playPause(aud) {
-      console.log("Playing Audio");
-      var aud = document.getElementById(aud);
-      if (aud.paused) {
-        if (typeof aud.play === 'function')
-          aud.play();
-      } else {
-        if (typeof aud.pause === 'function')
-          aud.pause();
-      }
-      
-      isPlaying = !isPlaying;
-    }
-  </script>
 
 </html>
 
