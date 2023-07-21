@@ -13,9 +13,7 @@ window.categories = [
     { id: "c1", name: "Category 1" },
    */
 
-  { id: "z1", name: "Dinosaur" },
-  { id: "z2", name: "Mammal" },
-  { id: "z3", name: "Aquatic" },
-  { id: "z4", name: "Pets" },
-  { id: "z5", name: "Reptile" }
+  { id: "Dino", name: "Dinosaur Plushies" },
+  { id: "Mamma", name: "Mammal Plushies" },
+  { id: "Aqua", name: "Aquatic Life Plushies" }
 ];

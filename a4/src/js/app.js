@@ -17,5 +17,62 @@
 // Create local variables to work with it in this file.
 const { products, categories } = window;
 
-// For debugging, display all of our data in the console
-console.log({ products, categories }, "Store Data");
+window.addEventListener("load", function() {
+    // Your code here that should run when the page and all resources are loaded
+    console.log("The page and all resources have been loaded!");
+
+    let menu = document.getElementById("menu");
+
+    for (let i = 0; i < categories.length; i++) {
+        let createdElement = document.createElement("button");
+        createdElement.id = categories[i].name;
+        createdElement.textContent = categories[i].name;
+        menu.appendChild(createdElement);
+    } 
+
+    
+    productList();
+
+
+});
+
+
+function productList(category)
+{
+    let menuButtons = document.querySelector("#menu").querySelectorAll("button");
+    for(let i = 0; i < menuButtons.length ; i++)
+{
+    menuButtons[i].addEventListener("click", function() {
+
+        document.getElementById("selected-category").innerHTML = menuButtons[i].textContent;
+        document.getElementById("category-products").innerHTML = "";
+
+        var catSelected = menuButtons[i].textContent[0];
+
+        for(let i = 0; i < products.length ; i++)
+        {
+            if(products[i].id[0] === catSelected && products[i].discontinued !== true)
+            {
+                var Row = document.getElementById("category-products").insertRow();
+                Row.className = "row";
+                var Cell = Row.insertCell();
+                var Contents = document.createTextNode(products[i].title);
+                Cell.appendChild(Contents);
+
+                Cell = Row.insertCell();
+                Contents = document.createTextNode(products[i].description);
+                Cell.appendChild(Contents);
+
+                Cell = Row.insertCell();
+                Contents = document.createTextNode(products[i].price);
+                Cell.appendChild(Contents);
+            }
+           
+            
+        }
+    });
+}
+}
+
+
+
