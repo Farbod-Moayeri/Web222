@@ -18,8 +18,6 @@
 const { products, categories } = window;
 
 window.addEventListener("load", function() {
-    // Your code here that should run when the page and all resources are loaded
-    console.log("The page and all resources have been loaded!");
 
     let menu = document.getElementById("menu");
 
