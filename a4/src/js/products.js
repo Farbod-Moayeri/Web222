@@ -30,7 +30,7 @@ window.products = [
     description: "A green T-Rex Plushie. Perfect way to introduce dinosaurs to children.",
     price: 1299,
     discontinued: false,
-    categories: ["z1"]
+    categories: ["Dino"]
   },
   {
     id: "D2",
@@ -38,7 +38,7 @@ window.products = [
     description: "A green triceratops Plushie. Perfect way to introduce dinosaurs to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z1"]
+    categories: ["Dino"]
   },
   {
     id: "D3",
@@ -46,7 +46,7 @@ window.products = [
     description: "A purple Pterodactyl Plushie. Perfect way to introduce dinosaurs to children.",
     price: 1099,
     discontinued: false,
-    categories: ["z1"]
+    categories: ["Dino"]
   },
   {
     id: "D4",
@@ -54,7 +54,7 @@ window.products = [
     description: "A green Velociraptor Plushie. Perfect way to introduce dinosaurs to children.",
     price: 999,
     discontinued: false,
-    categories: ["z1"]
+    categories: ["Dino"]
   },
   {
     id: "D5",
@@ -63,7 +63,7 @@ window.products = [
       "A brown and green Stegosaurus Plushie. Perfect way to introduce dinosaurs to children.",
     price: 1599,
     discontinued: false,
-    categories: ["z1"]
+    categories: ["Dino"]
   },
   // MAMMALS ------------------------------------------------------------------------------------------------------------------
   {
@@ -72,7 +72,7 @@ window.products = [
     description: "A brown monkey Plushie. Perfect way to introduce mammals to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   {
     id: "M2",
@@ -80,7 +80,7 @@ window.products = [
     description: "An elephant plushie. This plushies trunk is both extendable and moldable, meaning more fun for everyone.",
     price: 1399,
     discontinued: false,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   {
     id: "M3",
@@ -88,7 +88,7 @@ window.products = [
     description: "A wolf plushie. Wolves live in packs so if you buy 4, you get the next 4 for free.",
     price: 1399,
     discontinued: false,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   {
     id: "M4",
@@ -96,7 +96,7 @@ window.products = [
     description: "A lion plushie. A soft mane guarantees that children and adults alike will fall in love with this fearsome creature.",
     price: 1399,
     discontinued: false,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   {
     id: "M5",
@@ -104,7 +104,7 @@ window.products = [
     description: "A giraffe Plushie. The british fabricated the existence of giraffes to brag about hunting a 20 foot tall creature.",
     price: 1399,
     discontinued: true,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   {
     id: "M6",
@@ -112,7 +112,7 @@ window.products = [
     description: "A hamster plushie. Child whining for a pet hamster? Not willing to clean up after it? This is the next best thing.",
     price: 1399,
     discontinued: true,
-    categories: ["z2"]
+    categories: ["Mamma"]
   },
   // AQUATIC --------------------------------------------------------------------------------------
   {
@@ -121,7 +121,7 @@ window.products = [
     description: "A blue dolphin Plushie. Perfect way to introduce aquatic life to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z3"]
+    categories: ["Aqua"]
   },
   {
     id: "A2",
@@ -129,7 +129,7 @@ window.products = [
     description: "A white shark Plushie. Perfect way to introduce aquatic life to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z3"]
+    categories: ["Aqua"]
   },
   {
     id: "A3",
@@ -137,7 +137,7 @@ window.products = [
     description: "A blue jellyfish Plushie. Perfect way to introduce aquatic life to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z3"]
+    categories: ["Aqua"]
   },
   {
     id: "A4",
@@ -145,7 +145,7 @@ window.products = [
     description: "A blue whale Plushie. Perfect way to introduce aquatic life to children.",
     price: 1399,
     discontinued: false,
-    categories: ["z3"]
+    categories: ["Aqua"]
   },
   {
     id: "A5",
@@ -153,6 +153,6 @@ window.products = [
     description: "An orange goldfish Plushie. Perfect way to introduce aquatic life to children.",
     price: 1399,
     discontinued: true,
-    categories: ["z3"]
+    categories: ["Aqua"]
   }
 ];

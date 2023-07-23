@@ -25,53 +25,49 @@ window.addEventListener("load", function() {
 
     for (let i = 0; i < categories.length; i++) {
         let createdElement = document.createElement("button");
-        createdElement.id = categories[i].name;
+        createdElement.id = categories[i].id;
         createdElement.textContent = categories[i].name;
         menu.appendChild(createdElement);
     } 
 
-    
-    productList();
+    var menuButtons = document.querySelector("#menu").querySelectorAll("button");
 
+    productList( menuButtons[0]);
+
+    for(let i = 0; i < menuButtons.length ; i++)
+    {
+        menuButtons[i].addEventListener("click", function() {
+            productList(menuButtons[i]);
+        });
+    }
 
 });
 
 
 function productList(category)
 {
-    let menuButtons = document.querySelector("#menu").querySelectorAll("button");
-    for(let i = 0; i < menuButtons.length ; i++)
-{
-    menuButtons[i].addEventListener("click", function() {
 
-        document.getElementById("selected-category").innerHTML = menuButtons[i].textContent;
-        document.getElementById("category-products").innerHTML = "";
+    document.getElementById("category-products").innerHTML = "";
+    document.getElementById("selected-category").innerHTML = category.textContent;
 
-        var catSelected = menuButtons[i].textContent[0];
+    var filter = products.filter(cat => cat.categories[0].includes(category.id) && cat.discontinued !== true);
+    
+    filter.forEach(element => {
+        var Row = document.getElementById("category-products").insertRow();
+        Row.className = "row";
+        var Cell = Row.insertCell();
+        var Contents = document.createTextNode(element.title);
+        Cell.appendChild(Contents);
 
-        for(let i = 0; i < products.length ; i++)
-        {
-            if(products[i].id[0] === catSelected && products[i].discontinued !== true)
-            {
-                var Row = document.getElementById("category-products").insertRow();
-                Row.className = "row";
-                var Cell = Row.insertCell();
-                var Contents = document.createTextNode(products[i].title);
-                Cell.appendChild(Contents);
+        Cell = Row.insertCell();
+        Contents = document.createTextNode(element.description);
+        Cell.appendChild(Contents);
 
-                Cell = Row.insertCell();
-                Contents = document.createTextNode(products[i].description);
-                Cell.appendChild(Contents);
-
-                Cell = Row.insertCell();
-                Contents = document.createTextNode(products[i].price);
-                Cell.appendChild(Contents);
-            }
-           
-            
-        }
+        Cell = Row.insertCell();
+        Contents = document.createTextNode(`$${element.price/100}`);
+        Cell.appendChild(Contents);
     });
-}
+    
 }
 
 
