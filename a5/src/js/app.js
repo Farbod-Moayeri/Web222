@@ -10,7 +10,7 @@
  *
  *      Name:       Farbod Moayeri
  *      Student ID: 134395227
- *      Date:       2023/07/25
+ *      Date:       2023/08/08
  */
 
 // All of our data is available on the global `window` object.
@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
 
   for (let i = 0; i < menuButtons.length; i++) {
     menuButtons[i].addEventListener("click", function (event) {
-      const clickedButton = event.target; // Get the clicked button
+      const clickedButton = event.target; 
       createProductCard(clickedButton);
     });
   }
@@ -42,7 +42,7 @@ window.addEventListener("load", function () {
 
 function createProductCard(product) { 
 
-  console.log("Entered createProductCard");
+  
 
   document.getElementById("product-cards").innerHTML = "";
   document.getElementById("selected-category").innerHTML = product.textContent;
@@ -70,14 +70,10 @@ function createProductCard(product) {
     description.innerText = element.description;
     card.appendChild(description);
 
-    console.log("h4 element creation");
-
     let price = document.createElement('h4');
     price.innerText = `$${element.price / 100}`;
     card.appendChild(price);
 
     document.getElementById("product-cards").appendChild(card);
   });
-  
-
 } 

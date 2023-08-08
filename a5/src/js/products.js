@@ -32,7 +32,7 @@ window.products = [
     price: 1399,
     discontinued: false,
     categories: ["Dino"],
-    imageUrl: "images/Dino/Grey-Tall.jpg"
+    imageUrl: "images/Dino/triceratops.jpg"
 
   },
   {
@@ -53,7 +53,7 @@ window.products = [
     price: 999,
     discontinued: false,
     categories: ["Dino"],
-    imageUrl: "images/Dino/Grey-Tall.jpg"
+    imageUrl: "images/Dino/velociraptor.jpg"
   },
   {
     id: "D5",
@@ -74,7 +74,7 @@ window.products = [
     price: 1799,
     discontinued: false,
     categories: ["Mamma"],
-    imageUrl: "images/Dino/Grey-Tall.jpg"
+    imageUrl: "images/Mamma/monkey.jpg"
   },
   {
     id: "M2",

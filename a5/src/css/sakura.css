@@ -283,8 +283,8 @@ fieldset {
 }
 
 .card {
-  border: 2px solid lightgrey; /* Add a border with a color of your choice */
-  border-radius: 8px; /* Add rounded corners */
+  border: 2px solid lightgrey; 
+  border-radius: 8px; 
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -292,7 +292,7 @@ fieldset {
 }
 
 .product-cards {
-  /* Add styles for the product-cards container */
+  
   grid-template-columns: repeat(3,minmax(350px,350px));
   display: grid;
   gap: 20px;
