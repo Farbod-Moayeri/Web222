@@ -13,16 +13,6 @@
  */
 
 window.products = [
-  /*
-    {
-      id: "P1",
-      title: "Title 1",
-      description: "Description 1...",
-      price: 199,
-      discontinued: false,
-      categories: ["c1"]
-    },
-  */
   // DINOSAURS ------------------------------------------------------------------------------------
   {
     id: "D1",
@@ -157,7 +147,7 @@ window.products = [
     imageUrl: "images/Dino/Grey-Tall.jpg"
   },
   {
-    id: "M8",
+    id: "M9",
     title: "Bunny Plushie",
     description:
       "A bunny plushie. This plushie jumps up a foot if both ears are held up for three seconds.",

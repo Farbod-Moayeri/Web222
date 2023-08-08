@@ -32,40 +32,19 @@ window.addEventListener("load", function () {
   createProductCard(menuButtons[0]);
 
   for (let i = 0; i < menuButtons.length; i++) {
-    menuButtons[i].addEventListener("click", function () {
-      createProductCard(menuButtons[i]);
+    menuButtons[i].addEventListener("click", function (event) {
+      const clickedButton = event.target; // Get the clicked button
+      createProductCard(clickedButton);
     });
   }
 });
 
-// function productList(category) {
-//   document.getElementById("category-products").innerHTML = "";
-//   document.getElementById("selected-category").innerHTML = category.textContent;
-
-//   var filter = products.filter(
-//     (cat) => cat.categories[0].includes(category.id) && cat.discontinued !== true
-//   );
-
-//   filter.forEach((element) => {
-//     var Row = document.getElementById("category-products").insertRow();
-//     Row.className = "row";
-//     var Cell = Row.insertCell();
-//     var Contents = document.createTextNode(element.title);
-//     Cell.appendChild(Contents);
-
-//     Cell = Row.insertCell();
-//     Contents = document.createTextNode(element.description);
-//     Cell.appendChild(Contents);
-
-//     Cell = Row.insertCell();
-//     Contents = document.createTextNode(`$${element.price / 100}`);
-//     Cell.appendChild(Contents);
-//   });
-// }
 
 function createProductCard(product) { 
 
-  document.getElementById("category-products").innerHTML = "";
+  console.log("Entered createProductCard");
+
+  document.getElementById("product-cards").innerHTML = "";
   document.getElementById("selected-category").innerHTML = product.textContent;
 
   var filter = products.filter(
@@ -73,11 +52,13 @@ function createProductCard(product) {
   );
 
   filter.forEach((element) => {
-    const card = document.createElement("div"); 
-    card.classList.add("card"); 
+    const card = document.createElement("div");
+    card.classList.add("card");
 
     const productImage = document.createElement("img"); 
-    productImage.src = product.imageUrl; 
+    productImage.height = 300;
+    productImage.width = 300;
+    productImage.src = element.imageUrl; 
     productImage.classList.add("card-image"); 
     card.appendChild(productImage); 
 
@@ -89,10 +70,14 @@ function createProductCard(product) {
     description.innerText = element.description;
     card.appendChild(description);
 
+    console.log("h4 element creation");
+
     let price = document.createElement('h4');
     price.innerText = `$${element.price / 100}`;
     card.appendChild(price);
+
+    document.getElementById("product-cards").appendChild(card);
   });
-  // Return the card’s <div> element to the caller 
+  
 
 } 

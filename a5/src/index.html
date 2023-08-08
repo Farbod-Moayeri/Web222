@@ -9,31 +9,33 @@
     <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
     <link rel="stylesheet" href="./css/sakura.css" type="text/css" />
   </head>
+
   <body>
-    <header>
-      <!-- Change this to your Store's info -->
-      <h1>PLUSHIES R US</h1>
-      <p>A Plushie to make you happy. A Plushie to make you satisfied.</p>
-    </header>
 
-    <nav id="menu">
-      <!-- Dynamically create your menu category buttons here -->
-    </nav>
-
-
-    <main>
-      <h2 id="selected-category">
-        <!-- Dynamically update the selected category title -->
-      </h2>
+    
+    <div class="container">
+      <header>
+        <!-- Change this to your Store's info -->
+        <h1>PLUSHIES R US</h1>
+        <p>A Plushie to make you happy. A Plushie to make you satisfied.</p>
+      </header>
 
       
-      <table>
-        <tbody id="category-products">
-          <div id="product-cards" class="product-cards"></div>
-        </tbody>
-      </table>
-    </main>
+      <nav id="menu">
+        <!-- Dynamically create your menu category buttons here -->
+      </nav>
 
+
+      <main>
+        <h2 id="selected-category">
+          <!-- Dynamically update the selected category title -->
+        </h2>
+
+        
+        <div id="product-cards" class="product-cards"></div>
+        
+      </main>
+    </div>
     <!-- JavaScript Data Files -->
     <script src="./js/categories.js"></script>
     <script src="./js/products.js"></script>
