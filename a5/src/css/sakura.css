@@ -74,7 +74,6 @@ h6 {
 p {
   margin-top: 0px;
   margin-bottom: 2.5rem;
-
 }
 
 small,
@@ -258,9 +257,6 @@ fieldset {
   font-weight: 600;
 }
 
-
-
-
 .container {
   padding: 0px;
   margin: 0;
@@ -283,8 +279,8 @@ fieldset {
 }
 
 .card {
-  border: 2px solid lightgrey; 
-  border-radius: 8px; 
+  border: 2px solid lightgrey;
+  border-radius: 8px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -292,10 +288,7 @@ fieldset {
 }
 
 .product-cards {
-  
-  grid-template-columns: repeat(3,minmax(350px,350px));
+  grid-template-columns: repeat(3, minmax(350px, 350px));
   display: grid;
   gap: 20px;
-  
 }
-

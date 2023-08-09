@@ -33,7 +33,6 @@ window.products = [
     discontinued: false,
     categories: ["Dino"],
     imageUrl: "images/Dino/triceratops.jpg"
-
   },
   {
     id: "D3",

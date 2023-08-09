@@ -33,17 +33,13 @@ window.addEventListener("load", function () {
 
   for (let i = 0; i < menuButtons.length; i++) {
     menuButtons[i].addEventListener("click", function (event) {
-      const clickedButton = event.target; 
+      const clickedButton = event.target;
       createProductCard(clickedButton);
     });
   }
 });
 
-
-function createProductCard(product) { 
-
-  
-
+function createProductCard(product) {
   document.getElementById("product-cards").innerHTML = "";
   document.getElementById("selected-category").innerHTML = product.textContent;
 
@@ -55,25 +51,25 @@ function createProductCard(product) {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    const productImage = document.createElement("img"); 
+    const productImage = document.createElement("img");
     productImage.height = 300;
     productImage.width = 300;
-    productImage.src = element.imageUrl; 
-    productImage.classList.add("card-image"); 
-    card.appendChild(productImage); 
+    productImage.src = element.imageUrl;
+    productImage.classList.add("card-image");
+    card.appendChild(productImage);
 
-    let title = document.createElement('h3');
+    let title = document.createElement("h3");
     title.innerText = element.title;
     card.appendChild(title);
 
-    let description = document.createElement('p');
+    let description = document.createElement("p");
     description.innerText = element.description;
     card.appendChild(description);
 
-    let price = document.createElement('h4');
+    let price = document.createElement("h4");
     price.innerText = `$${element.price / 100}`;
     card.appendChild(price);
 
     document.getElementById("product-cards").appendChild(card);
   });
-} 
+}
