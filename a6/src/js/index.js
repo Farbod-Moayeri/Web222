@@ -1,5 +1,7 @@
 function toggleField(id1, id2) {
-    const checkedField = document.getElementById(id);
+
+    console.log(`Entered toggleField() with ${id1} controller and ${id2} Revealer`);
+    const checkedField = document.getElementById(id1);
     const revealedField = document.getElementById(id2);
     
     if (checkedField.checked) {

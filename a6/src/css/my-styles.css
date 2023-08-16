@@ -1,20 +1,50 @@
-
-.content {
-    display: grid;
-    grid-template-columns: 1fr 300px; /* What is this doing here */
-    min-height: 100dvh;
-    grid-template-columns: 1fr;
-    /*grid-template-columns: repeat( auto-fit, minmax(1fr, 3fr) );*/
-}
-
 a {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
+    width: 95%;
+    max-width: 1024px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #272343;
+    color: white;
+}
+
+main {
+   width: 100%;
    padding: 0;
    margin: 0;
+   text-align: center;
+   background-color: #212121;
+   color: white;
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #e3f6f5;
+    color: #272343;
 }
 
 #profile-image {
@@ -24,20 +54,10 @@ body {
     border-radius: 8px;
 }
 
-.left-side {
-    text-align: center;
-    justify-content: center;
-    background-color: #5865F2;
-}
-
-.right-side {
-    justify-content: center;
-    background-color: white;
-    text-align: center;
-}
 
 #main-buttons {
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #resume-button {
@@ -54,6 +74,17 @@ body {
     margin-left: 10px;
     border-radius: 15px;
     width: 100px;
+}
+
+.education-info {
+    
+}
+
+.education-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact-form {
@@ -76,25 +107,21 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+#hourly-form {
+    display: none;
+}
 
+#message {
+    padding-top: 25px;
+}
 .content-container img{
     max-width: 400px;
 }
 
 
 @media (max-width: 400px){
-    .content-container {
-        flex-direction: column;
-    }
     
-    .content-container img{
-        max-width: 100%;
-    }
+
     
-    #right-menu
-    {
-        margin-left: 0;
-        margin-top: 10px;
-    }
 }
 

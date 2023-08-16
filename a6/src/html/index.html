@@ -5,101 +5,76 @@
         <meta name="author" content="Farbod Moayeri" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/my-styles.css">
+        <script src="/js/index.js"></script>
         <title>My Online Resume</title>
     </head>
 
     <body>
         <header>
-            
-        </header>
+            <img id="profile-image" src="/images/Farbod-Moayeri.jpg" alt="Farbod-Moayeri">
 
-        <main>
-            
-            <div class="content">
-                
-                <div class="left-side">
-                
-                    <img id="profile-image" src="/images/Farbod-Moayeri.jpg" alt="Farbod-Moayeri">
+            <h2>Farbod Moayeri</h2>
+            <p>Future Backend Developer</p>
 
-                    <h2>Farbod Moayeri</h2>
-                    <p>Future Backend Developer</p>
-
-                    <div id="main-buttons">
-                        <a href="/images/Farbod-Moayeri.jpg" download="Farbod Moayeri Resume">
-                            <button id="resume-button">Resume</button>
-                        </a>
-                        <a href="./index.html#contact-form">
-                            <button id="contact-button">Contact Me</button>
-                        </a>
-                    </div>
-                    
-                    <div id="education-info">
-                        <div class="education-container">
-                            <div class="qualification">
-                                <h2>Walter Scott</h2>
-                            </div>
-                            <div class="info">
-                                <p>Info about my degree</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <!-- FORM STUFF -->
-                    <form id="contact-form" name="contact" action="https://httpbin.org/post" method="post">
-                        <h1>Contact Me</h1>
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" name="name" size="25" maxlength="50" required>
-
-                        <label for="email">Email:</label>
-                        <input id="email" type="text" name="email" size="25" maxlength="50" required>
-
-                        <label for="address">Address:</label>
-                        <input id="address" type="text" name="address" size="25" maxlength="100" required>
-
-                        <label for="city">City:</label>
-                        <input id="city" type="text" name="city" size="25" list="cities" maxlength="50" required>
-                        <datalist id="cities">
-                            <option value="Toronto"></option>
-                            <option value="Montreal"></option>
-                            <option value="Calgary"></option>
-                            <option value="Ottawa"></option>
-                        </datalist>
-
-                        
-                        <label for="postal">Postal Code:</label>
-                        <input id="postal" type="text" name="postal" size="6" maxlength="7" pattern="/^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ ]?\d[ABCEGHJ-NPRSTV-Z]\d$/i"required>
-
-                        <h2>Reason for Contact:</h2>
-                        <label><input type="radio" name="contactReason" value="question" required>Question</label><br>
-                        <label><input type="radio" name="contactReason" value="comment" required>Comment</label><br>
-                        <label><input type="radio" name="contactReason" value="hiring" id="hiring" required onclick="toggleField('hiring','hourlyRate')">Hiring</label>
-                        <div id="hourlyField" style="display: none;">
-                            <label for="hourlyRate">Hourly Rate:</label>
-                            <input type="number" id="hourlyRate" name="hourlyRate" step="0.01">
-                        </div>
-
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" rows="5" required></textarea>
-                    </form>
-
-
-                </div>
-
-                <!-- FUTURE USE
-                <div class="right-side">
-                    <h1>MENU</h1>
-                    <link rel="Projects link" href="./projects.html">
-                    <a href="./projects.html">PROJECTS</a>
-                </div>
-                -->
+            <div id="main-buttons">
+                <a href="/images/Farbod-Moayeri.jpg" download="Farbod Moayeri Resume">
+                    <button id="resume-button">Resume</button>
+                </a>
+                <a href="./index.html#contact-form">
+                    <button id="contact-button">Contact Me</button>
+                </a>
             </div>
-            
-            
-        </main>
 
+        </header>
+        <main>
+            <div id="education-info">
+                <div class="education-container">
+                    <div class="qualification">
+                        <h2>Walter Scott</h2>
+                    </div>
+                    <div class="info">
+                        <p>Info about my degree</p>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer>
-            
+            <form id="contact-form" name="contact" action="https://httpbin.org/post" method="post">
+                <h1>Contact Me</h1>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" size="25" maxlength="50" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" size="25" maxlength="50" required>
+
+                <label for="address">Address:</label>
+                <input id="address" type="text" name="address" size="25" maxlength="100" required>
+
+                <label for="city">City:</label>
+                <input id="city" type="text" name="city" size="25" list="cities" maxlength="50" required>
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Montreal">
+                    <option value="Calgary">
+                    <option value="Ottawa">
+                </datalist>
+
+                
+                <label for="postal">Postal Code:</label>
+                <input id="postal" type="text" name="postal" size="6" maxlength="7" pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ ]?\d[ABCEGHJ-NPRSTV-Z]\d$"required>
+
+                <h2>Reason for Contact:</h2>
+                <label><input type="radio" name="contactReason" value="question" required>Question</label><br>
+                <label><input type="radio" name="contactReason" value="comment" required>Comment</label><br>
+                <label><input type="radio" name="contactReason" value="hiring" id="hiring" required onclick="toggleField('hiring','hourlyRate')">Hiring</label>
+                <div id="hourlyField" style="display: none;">
+                    <label for="hourlyRate">Hourly Rate:</label>
+                    <input type="number" id="hourlyRate" name="hourlyRate" step="0.01">
+                </div>
+
+                <label id="message" for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </form>
         </footer>
     </body>
 
