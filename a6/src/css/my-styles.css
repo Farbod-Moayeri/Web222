@@ -1,10 +1,10 @@
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 300px; /* What is this doing here */
     min-height: 100dvh;
-    /*grid-template-columns: minmax(2fr , 2fr) minmax(1fr , 1fr);*/
-    grid-template-columns: repeat( auto-fit, minmax(1fr, 3fr) );
+    grid-template-columns: 1fr;
+    /*grid-template-columns: repeat( auto-fit, minmax(1fr, 3fr) );*/
 }
 
 a {
@@ -37,10 +37,10 @@ body {
 }
 
 #main-buttons {
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
-#resume {
+#resume-button {
     background-color: white;
     padding: 10px;
     margin-right: 10px;
@@ -48,13 +48,34 @@ body {
     width: 100px;
 }
 
-#contact {
+#contact-button {
     background-color: white;
     padding: 10px;
     margin-left: 10px;
     border-radius: 15px;
     width: 100px;
 }
+
+#contact-form {
+    
+    display: inline-grid;
+    text-align: left;
+    font-style: italic;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 50px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 .content-container img{
     max-width: 400px;
