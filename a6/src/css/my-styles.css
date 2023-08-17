@@ -1,8 +1,3 @@
-a {
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 body {
     width: 95%;
     max-width: 1024px;
@@ -76,8 +71,47 @@ footer {
     width: 100px;
 }
 
-.education-info {
-    
+.summary-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.summary {
+    display: flex;
+    text-align: left;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    max-width: 400px;
+    height: 250px;
+    max-height: 250px;
+    background-color: #757575;
+    border-radius: 20px 0 0 20px;
+}
+
+.characteristics {
+    display: flex;
+    text-align: left;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    max-width: 200px;
+    height: 250px;
+    max-height: 250px;
+    background-color: #BDBDBD;
+    border-radius: 0 20px 20px 0;
+}
+
+#education-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .education-container {
@@ -85,6 +119,59 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 25px;
+    width: fit-content;
+}
+
+.qualification h6,
+.qualification p {
+    margin-top: -10px;
+    padding-top: 3px;
+}
+.qualification {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #757575;
+    height: 150px;
+    max-width: 200px;
+    width: 200px;
+    color: black;
+    border-radius: 20px 0 0 20px;
+
+}
+
+.info p {
+    padding-left: 20px;
+    margin-top: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
+
+.info h3 {
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.info h5 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+}
+.info {
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BDBDBD;
+    height: 150px;
+    max-width: 400px;
+    width: 400px;
+    color: black;
+    border-radius: 0 20px 20px 0;
 }
 
 #contact-form {
@@ -113,6 +200,7 @@ input[type="text"] {
 
 #message {
     padding-top: 25px;
+    margin-bottom: 50px;
 }
 .content-container img{
     max-width: 400px;
