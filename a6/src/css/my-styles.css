@@ -74,6 +74,16 @@ footer {
     margin-right: 0px;
     border-radius: 15px;
     width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+#contact-button:hover {
+    background-color: #ffd700;
+}
+
+#contact-button:active {
+    transform: scale(0.95);
 }
 
 #contact-button {
@@ -82,6 +92,8 @@ footer {
     margin-left: 0px;
     border-radius: 15px;
     width: 100px;
+    cursor: pointer;
+    border: none;
 }
 
 .summary-container {
@@ -250,7 +262,78 @@ input[type="text"] {
 
 
 @media (max-width: 400px){
-    
+    body {
+        width: 100%;
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    #profile-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .summary-container {
+        flex-direction: column; 
+    }
+
+    .summary, .characteristics {
+        width: 100%; 
+        max-width: none;
+        height: auto; 
+        border-radius: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .summary p, .characteristics p {
+        padding-bottom: 28px;
+    }
+    .qualification, .info {
+        max-width: none; 
+        width: 100%;
+        height: auto;
+        border-radius: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .qualification h5 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    #education-info {
+        align-items: flex-start; 
+    }
+
+    .education-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-bottom: 20px;
+    }
+
+    .qualification h5, .qualification p, .info p, .info h3, .info h5 {
+        padding: 10px; 
+    }
+
+    #contact-form {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    input[type="text"], #hourly, #message {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    #submit-button {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .content-container img {
+        max-width: 100%; 
+    } 
 
     
 }
