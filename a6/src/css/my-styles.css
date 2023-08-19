@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
 body {
     width: 95%;
     max-width: 1024px;
@@ -55,10 +60,18 @@ footer {
     padding-bottom: 25px;
 }
 
+#resume-button:hover {
+    background-color: #ffd700;
+}
+
+#resume-button:active {
+    transform: scale(0.95);
+}
+
 #resume-button {
     background-color: white;
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
     border-radius: 15px;
     width: 100px;
 }
@@ -66,7 +79,7 @@ footer {
 #contact-button {
     background-color: white;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
     border-radius: 15px;
     width: 100px;
 }
@@ -79,30 +92,52 @@ footer {
     margin-bottom: 25px;
 }
 
-.summary {
-    display: flex;
+.summary h3 {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.summary p {
+    margin: 0px;
+    padding-left: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: left;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    max-width: 400px;
-    height: 250px;
-    max-height: 250px;
+    padding-right: 28px;
+}
+
+.summary {
+    width: 325px;
+    max-width: 325px;
+    height: 300px;
+    max-height: 300px;
     background-color: #757575;
     border-radius: 20px 0 0 20px;
 }
 
-.characteristics {
-    display: flex;
+.characteristics h3
+{
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+
+}
+.characteristics p {
+    margin: 0px;
+    padding-left: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: left;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    width: 200px;
-    max-width: 200px;
-    height: 250px;
-    max-height: 250px;
+}
+
+.characteristics {
+    width: 325px;
+    max-width: 325px;
+    height: 300px;
+    max-height: 300px;
     background-color: #BDBDBD;
     border-radius: 0 20px 20px 0;
 }
@@ -123,16 +158,16 @@ footer {
     width: fit-content;
 }
 
-.qualification h6,
+.qualification h5 {
+    margin-top: 52px;
+    margin-bottom: 5px;
+    padding: 0;
+}
 .qualification p {
-    margin-top: -10px;
+    margin: 0;
     padding-top: 3px;
 }
 .qualification {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     background-color: #757575;
     height: 150px;
     max-width: 200px;
@@ -151,8 +186,9 @@ footer {
 
 .info h3 {
     padding-left: 20px;
-    margin-top: 30px;
+    padding-top: 20px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .info h5 {
@@ -162,14 +198,10 @@ footer {
 }
 .info {
     text-align: left;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
     background-color: #BDBDBD;
     height: 150px;
-    max-width: 400px;
-    width: 400px;
+    max-width: 450px;
+    width: 450px;
     color: black;
     border-radius: 0 20px 20px 0;
 }
@@ -182,10 +214,14 @@ footer {
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 50px;
+    width: 40%;
+    max-width: 40%;
 }
+
 
 input[type="text"] {
   width: 100%;
+  max-width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -194,14 +230,20 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-#hourly-form {
-    display: none;
+#hourly {
+    margin-top: 15px;
 }
 
 #message {
-    padding-top: 25px;
-    margin-bottom: 50px;
+    padding: 8px;
+    margin-bottom: 30px;
 }
+
+#submit-button {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
 .content-container img{
     max-width: 400px;
 }
